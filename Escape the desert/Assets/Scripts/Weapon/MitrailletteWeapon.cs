@@ -5,9 +5,16 @@ using UnityEngine;
 public class MitrailletteWeapon : Weapon
 {
     
-    private float nextFireTime;
+    
+    public float nextFireTime;
     private Vector3 destination;
     private bool _auto;
+// FX
+    public GameObject effectTrail;
+    public Transform raycastOrigin;
+    public Transform raycastDestination;
+    public GameObject muzzleFlash;
+    private Ray ray;
 
    // gun stats
    public float fireRate = 0.5f;
@@ -22,6 +29,8 @@ public class MitrailletteWeapon : Weapon
     {
         _auto = false;
     }
+    
+    
 
     private void Update()
     {
@@ -35,13 +44,21 @@ public class MitrailletteWeapon : Weapon
         }
     }
 
-    private void fire()  // ici c'est la méthode ou l'on modifie la facon dont tire l'arme.
+  public void fire()  // ici c'est la méthode ou l'on modifie la facon dont tire l'arme.
     {
         /// les fxs
         Debug.Log("shooot");
         
+       ray.origin = raycastOrigin.position;
+        ray.direction = raycastDestination.position - raycastOrigin.position;
+        muzzleFlash.SetActive(true);
         
-        if (Physics.Raycast(launchPoint.position,launchPoint.forward,out hit,Maxrange))// pour appliquer les degats
+        var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
+        tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
+         //
+         
+         // shoot + dgt
+         if (Physics.Raycast(launchPoint.position,launchPoint.forward,out hit,Maxrange))// pour appliquer les degats
         {
             destination = hit.point;
             Debug.Log(hit.point);
