@@ -87,26 +87,28 @@ public class HoldTheGun : Weapon
            {
                /// les fxs
                Debug.Log("shooot");
-               destination = ray.GetPoint(Maxrange);
+               //destination = ray.GetPoint(Maxrange);
             
             
-               raycastDestination = hit.transform;
-               ray.origin = raycastOrigin.position;
-               ray.direction = raycastDestination.position - raycastOrigin.position;
+               //raycastDestination = hit.transform;
+               //ray.origin = raycastOrigin.position;
+               //ray.direction = raycastDestination.position - raycastOrigin.position;
                muzzleFlash.SetActive(true);
-        
-               var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
-               tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
-           
-            
-           
+               //var tracer = Instantiate(effectTrail, launchPOINT.transform.position, Quaternion.identity,null);
+               //tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime
+
+
+
                Debug.Log(hit.point);
                if (hit.transform.gameObject.CompareTag("Enemie"))
                {
-                   GameObject enemies = hit.transform.gameObject;
-                   enemies.GetComponent<Health>().takeDamage(degats);
+                  // GameObject enemies = hit.transform.gameObject;
+                //   enemies.GetComponent<Health>().takeDamage(degats);
                }
            }
+           //Dans tous les cas
+           var tracer = Instantiate(effectTrail, launchPOINT.transform.position, Quaternion.identity,null);
+           tracer.transform.LookAt( launchPOINT.transform.position +  launchPOINT.transform.forward);
        }
 
     }

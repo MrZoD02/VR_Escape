@@ -46,6 +46,7 @@
             <e p="EnemySpawner.cs" t="Include" />
             <e p="HealtEnemies.cs" t="Include" />
           </e>
+          <e p="LOOKATFORWARD.cs" t="Include" />
           <e p="PV" t="Include">
             <e p="Health.cs" t="Include" />
           </e>
