@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelUserStore">
-    <attachedFolders />
+    <attachedFolders>
+      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.inputsystem@1.0.2</Path>
+      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.3-preview</Path>
+      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.subsystemregistration@1.0.6</Path>
+      <Path>../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.3-preview</Path>
+    </attachedFolders>
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.11.2</Path>
       <Path>Library/PackageCache/com.unity.editorcoroutines@1.0.0</Path>
@@ -44,6 +49,7 @@
       <Path>Library/PackageCache/com.unity.modules.vr@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.wind@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.xr@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.postprocessing@2.0.3-preview</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@10.6.0</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@10.6.0</Path>
       <Path>Library/PackageCache/com.unity.searcher@4.3.2</Path>
@@ -62,9 +68,8 @@
       <Path>Library/PackageCache/com.unity.xr.windowsmr@4.6.0</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
-      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.inputsystem@1.0.2</Path>
-      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.3-preview</Path>
-      <Path>../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.subsystemregistration@1.0.6</Path>
+      <Path>../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.inputsystem@1.0.2</Path>
+      <Path>../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.subsystemregistration@1.0.6</Path>
     </explicitIncludes>
     <explicitExcludes>
       <Path>.idea</Path>
