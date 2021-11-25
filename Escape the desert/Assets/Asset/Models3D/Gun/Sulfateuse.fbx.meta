@@ -27,11 +27,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: fa949d195293ae84083296d381f98e8d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sulfateuse_Metal
-    second: {fileID: 2100000, guid: 1e352e27004bae243b5225fcb90c05ec, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

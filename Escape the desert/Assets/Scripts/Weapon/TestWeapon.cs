@@ -9,6 +9,7 @@ public class TestWeapon : MonoBehaviour
     private PlayerInput _playerInput;
     public GameObject effectTrail;
     public Transform raycastOrigin;
+    public Transform raycastDestination;
     public GameObject muzzleFlash;
 
     
@@ -28,21 +29,18 @@ public class TestWeapon : MonoBehaviour
         { 
             Engage();
         }
-        
     }
 
     public void Engage()
     {
         ray.origin = raycastOrigin.position;
+        ray.direction = raycastDestination.position - raycastOrigin.position;
         muzzleFlash.SetActive(true);
 
 
         var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
 
         tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
-        
-        muzzleFlash.SetActive(false);
-        
     }
 
     public void DisEngage()
