@@ -39,6 +39,7 @@ public class MitrailletteWeapon : Weapon
             nextFireTime = Time.time + fireRate;
             if (_auto)
             {
+                Debug.Log("shoot");
                 fire();
             }
         }
@@ -46,27 +47,32 @@ public class MitrailletteWeapon : Weapon
 
   public void fire()  // ici c'est la méthode ou l'on modifie la facon dont tire l'arme.
     {
-        /// les fxs
-        Debug.Log("shooot");
         
-       ray.origin = raycastOrigin.position;
-        ray.direction = raycastDestination.position - raycastOrigin.position;
-        muzzleFlash.SetActive(true);
-        
-        var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
-        tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
-         //
          
+        Ray ray = new Ray(launchPoint.position,launchPoint.forward);
          // shoot + dgt
-         if (Physics.Raycast(launchPoint.position,launchPoint.forward,out hit,Maxrange))// pour appliquer les degats
+         if (Physics.Raycast(ray,out hit,Maxrange))// pour appliquer les degats
         {
-            destination = hit.point;
+            /// les fxs
+            Debug.Log("shooot");
+            destination = ray.GetPoint(Maxrange);
+            
+            
+            raycastDestination = hit.transform;
+            ray.origin = raycastOrigin.position;
+            ray.direction = raycastDestination.position - raycastOrigin.position;
+            muzzleFlash.SetActive(true);
+        
+            var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
+            tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
+           
+            
+           
             Debug.Log(hit.point);
             if (hit.transform.gameObject.CompareTag("Enemie"))
             {
                 GameObject enemies = hit.transform.gameObject;
                 enemies.GetComponent<Health>().takeDamage(degats);
-                
             }
         }
     }

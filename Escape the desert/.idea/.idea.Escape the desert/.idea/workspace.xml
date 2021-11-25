@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="731c0eb3-c76c-42a4-b669-c00a534a14d7" name="Default Changelist" comment="" />
+    <list default="true" id="731c0eb3-c76c-42a4-b669-c00a534a14d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape the desert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape the desert/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.0.0-pre.5/Default Input Actions/XRI Default Input Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.0.0-pre.5/Default Input Actions/XRI Default Input Actions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/HoldTheGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/HoldTheGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon/MitrailletteWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon/MitrailletteWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +20,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/TestWeapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/HoldTheGun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Asset/Models3D/Car/AMG_66.fbx.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/MitrailletteWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/TestWeapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/TestWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/MitrailletteWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/HoldTheGun.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +94,7 @@
       <workItem from="1637761629679" duration="59000" />
       <workItem from="1637761712038" duration="1013000" />
       <workItem from="1637831255019" duration="133000" />
+      <workItem from="1637833754278" duration="4632000" />
     </task>
     <servers />
   </component>
