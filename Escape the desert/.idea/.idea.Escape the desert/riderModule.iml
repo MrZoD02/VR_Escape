@@ -7,6 +7,9 @@
     <content url="file://$MODULE_DIR$/../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.inputsystem@1.0.2" />
     <content url="file://$MODULE_DIR$/../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.3-preview" />
     <content url="file://$MODULE_DIR$/../../../../../../Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.subsystemregistration@1.0.6" />
+    <content url="file://D:/Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.inputsystem@1.0.2" />
+    <content url="file://D:/Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.0.3-preview" />
+    <content url="file://D:/Users/Paul/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.subsystemregistration@1.0.6" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
