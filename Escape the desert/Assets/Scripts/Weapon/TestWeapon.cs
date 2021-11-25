@@ -10,6 +10,7 @@ public class TestWeapon : MonoBehaviour
     public GameObject effectTrail;
     public Transform raycastOrigin;
     public GameObject muzzleFlash;
+    public float speed;
 
 
     private void Start()
@@ -37,7 +38,7 @@ public class TestWeapon : MonoBehaviour
 
         var tracer = Instantiate(effectTrail, ray.origin, Quaternion.identity);
 
-        tracer.transform.position += tracer.transform.forward * 15 *Time.deltaTime;
+        tracer.transform.position += raycastOrigin.forward * speed *Time.deltaTime;
         
         muzzleFlash.SetActive(false);
         
